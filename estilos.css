@@ -80,7 +80,6 @@ border: 1px solid black;
 .seccion_referencias{
     display: flex;
     align-items: flex-start;
-    height: 3rem;
     border-bottom:1px solid black;
     border-left: 1px solid black;
     border-right:  1px solid black;
@@ -111,6 +110,33 @@ border: 1px solid black;
     font-size: 13px;
 }
 
+.data_2_1 {
+    height: 2rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.data_2_2 {
+    height: 2rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.data_2_3 {
+    height: 2rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.data_2_4 {
+    height: 2rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
 /* #contendorPrincipal {
     background-color: aquamarine;
 } */

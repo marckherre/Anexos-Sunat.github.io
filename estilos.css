@@ -1,19 +1,116 @@
 body {
-margin: 10px;
+margin: 2%;
 text-align: center;
+font-family: 'Times New Roman', Times, serif;
 }
 
 .seccion{
-    border: 1px solid #070707;
-    display: grid;
-    grid-template-columns: 1fr 50fr;
+border: 1px solid black;
+    display: flex;
+    align-items: flex-end;
+}
+
+.seccionChild{
+    display: flex;
+    align-items: flex-end;
 }
 
 .numero {
     font-weight: 700;
     text-align: left;
     padding-left: 5px;
-    width: 3rem;
+    min-width: 3rem;
     border-right: 1px solid #070707;
 }
 
+.seccionPesonal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.seccion9 {
+    display: flex;
+    margin-right: 15px;
+    border: 1px solid #070707;
+}
+
+.seccion10 {
+    display: flex;
+    margin-left: 15px;
+    border: 1px solid #070707;
+}
+
+.seccion10>div {
+    display: flex;
+    text-align-last: center;
+}
+
+#responsableMercancias {
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#funcionarioAduanero {
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.datosGenerales {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    text-align: left;
+
+
+}
+
+.datosGenerales >div {
+    height: 3rem;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 5px;
+    font-size: 11px;
+    height: fit-content;
+}
+
+.seccion_referencias{
+    display: flex;
+    align-items: flex-start;
+    height: 3rem;
+    border-bottom:1px solid black;
+    border-left: 1px solid black;
+    border-right:  1px solid black;
+}
+
+.numero_referencias {
+    font-weight: 700;
+    text-align: left;
+    padding-left: 5px;
+    min-width: 3rem;
+    border-right:1px solid #070707;
+    border-bottom:1px solid #070707;
+    font-size: 11px;
+
+}
+
+.dato_referencias {
+    text-align: left;
+    border-bottom:1px solid #070707;
+    width: 100%;
+    padding-left: 3px;
+    font-size: 11px;
+}
+
+.titulo_seccion {
+    padding-left: 3px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* #contendorPrincipal {
+    background-color: aquamarine;
+} */

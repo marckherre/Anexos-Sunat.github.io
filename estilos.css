@@ -94,14 +94,12 @@ border: 1px solid black;
     padding-left: 5px;
     min-width: 3rem;
     border-right:1px solid #070707;
-    border-bottom:1px solid #070707;
     font-size: 11px;
 
 }
 
 .dato_referencias {
     text-align: left;
-    border-bottom:1px solid #070707;
     width: 100%;
     padding-left: 3px;
     font-size: 11px;
@@ -150,7 +148,7 @@ border: 1px solid black;
     font-size: 11px;
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-columns:5fr 2fr 3fr;
 
 }
 
@@ -161,6 +159,24 @@ border: 1px solid black;
 
 }
 
+.numero_diligencia  {
+    text-align: left;
+    padding-left: 5px;
+    min-width: 3rem;
+    font-size: 11px;
+    border-right: 1px solid black;
+
+}
+
+.seccion_diligencia_descripcion {
+    height: 7rem;
+    border: 1px solid black;
+}
+.titulo_descripcion_diligencia {
+    font-size: 11px;
+    text-align: left;
+    padding-left: 5px;
+}
 /* #contendorPrincipal {
     background-color: aquamarine;
 } */

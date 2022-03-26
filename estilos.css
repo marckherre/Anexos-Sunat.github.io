@@ -199,6 +199,30 @@ border: 1px solid black;
     border-right: 1px solid black;
     margin-left: 13px;
 }
-/* #contendorPrincipal {
-    background-color: aquamarine;
-} */
+
+.seccion_fotos {
+    border: 1px solid black;
+    display: grid;
+    font-size: 12px;
+    text-align: justify;
+    padding-left: 5px;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    justify-items: center
+}
+
+.textInput {
+    height: 2rem;
+    width: 2rem;
+}
+
+.cantInput{
+    height: 1rem;
+    width: 2rem;
+}
+
+.firma{
+display: flex;
+justify-items: end;
+
+}

@@ -4,6 +4,20 @@ text-align: center;
 font-family: 'Times New Roman', Times, serif;
 }
 
+
+img{
+    display: flex;
+    justify-items: left;
+    height: 3.5em;
+    width: 12em;
+    margin-bottom: -20px;
+
+}
+h4{
+    margin-bottom: 5px;
+}
+
+
 .seccion{
 border: 1px solid black;
     display: flex;
@@ -27,6 +41,7 @@ border: 1px solid black;
 .seccionPesonal {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
 }
 
 .seccion9 {
@@ -59,6 +74,7 @@ border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr 5fr;
     text-align: left;
+    margin-bottom: 10px;
 
 
 }
@@ -72,10 +88,11 @@ border: 1px solid black;
     padding-left: 5px;
     font-size: 11px;
     height: fit-content;
+   
 }
 
 .seccion_referencias{   
-
+    
     display: flex;
     align-items: flex-start;
     border-bottom:1px solid black;
@@ -87,9 +104,10 @@ border: 1px solid black;
     font-weight: 700;
     text-align: left;
     padding-left: 5px;
-    min-width: 3rem;
+    min-width: 1rem;
     border-right:1px solid #070707;
     font-size: 11px;
+    
 
 }
 
@@ -107,36 +125,65 @@ border: 1px solid black;
 }
 
 .seccionDiligencias {
-    padding-left: 3px;
+    padding-left: 5px;
     font-size: 11px;
+    text-align: left;
 }
 
 .data_2_1 {
-    height: 2rem;
+    
+    
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    height: 1.4rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
+    
 }
 
 .data_2_2 {
-    height: 2rem;
+    
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    height: 1.4rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
+    
 }
 
 .data_2_3 {
-    height: 2rem;
+
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    height: 1.4rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
+    
 }
 
 .data_2_4 {
-    height: 2rem;
+    height: 1.4rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    margin-bottom:10px;
 }
 
 .seccionDiligencia {
@@ -164,10 +211,15 @@ border: 1px solid black;
 }
 
 .seccion_diligencia_descripcion {
-    height: 7rem;
+    height: 11rem;
     border-right: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px;
+    
 }
 .titulo_descripcion_diligencia {
     border-top: 1px solid black;
@@ -176,13 +228,16 @@ border: 1px solid black;
     font-size: 11px;
     text-align: left;
     padding-left: 5px;
+    padding-top: 5px;
+    margin-top: 10px;   
 }
 
 .firma1 {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 8rem;
+    height: 6rem;
+    font-size: 11px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -193,17 +248,43 @@ border: 1px solid black;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 8rem;
+    height: 6rem;
+    font-size: 11px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
     margin-left: 13px;
 }
 
-.seccion_fotos {
-    border: 1px solid black;
+.firma3 {
+
+    display: flex;
+    align-items: end;
+    height: 8rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.firmaCenter{
+    text-align: center;
+}
+
+.boxFirma{
+    height: 4rem;
+    width: 20rem;
+    margin: 5px;
     display: grid;
-    font-size: 12px;
+    font-size: 11px;
+    text-align: left;
+}
+
+.seccion_fotos {
+    height: 55px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    display: flex;
+    font-size: 11px;
     text-align: justify;
     padding-left: 5px;
     grid-template-columns: 5fr 1fr;
@@ -212,8 +293,10 @@ border: 1px solid black;
 }
 
 .textInput {
-    height: 2rem;
-    width: 2rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .cantInput{

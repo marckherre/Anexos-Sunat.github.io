@@ -1,191 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>ANEXO IV - ACTA DE VERIFICACIÓN</title>
-    <link rel="stylesheet" href="estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
   </head>
   <body>
-    
-      
-   
-    <img src="./img/sunat.png" alt="lo siento T_T">
-    <div id="contendorPrincipal">
+    <div class="form_container">
+      <br />
+      <form class="row g-3">
+        <div class="col-md-12" needs-validation>
+          <label for="inputCity" class="form-label">Acta de Verificación</label>
+          <input type="number" class="form-control" id="inputDate" placeholder="000-0000-0000-000000"/>
+        </div>
+        <div class="col-md-2">
+          <label for="inputCity" class="form-label">Fecha</label>
+          <input type="date" class="form-control" id="inputDate" />
+        </div>
+        <div class="col-md-2">
+          <label for="inputState" class="form-label">Hora</label>
+          <input type="time" class="form-control" id="inputTime" />
+        </div>
+        <div class="col-md-8">
+          <label for="inputZip" class="form-label">Lugar de Verificación</label>
+          <input type="text" class="form-control" id="inputPlace" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Acta de Inmovilización - Incautación</label>
+          <input type="text" class="form-control" id="inputEmail4" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Expediente</label>
+          <input type="text" class="form-control" id="inputPassword4" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Nombre del Solicitante</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="Pepito Grillo"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputOtros" class="form-label">Otros</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputOtros"
+            placeholder="Especifique otra referencia"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputNameConcurrente" class="form-label">Nombre del Concurrente</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNameConcurrente"
+            placeholder="Juanito Alimaña"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputDocConcurrente" class="form-label">Doc. de Identidad</label>
+          <input type="number" class="form-control" id="inputDocConcurrente" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCalidadConcurrente" class="form-label">Calidad del Concurrente</label>
+          <input type="text" class="form-control" id="inputCalidadConcurrente" />
+        </div>
 
-              <h4>ACTA DE VERIFICACIÓN DE MERCANCÍAS Nº AAA - BBBB - CCCC - DDDDDD</h4>
-  
-      <!-- SECCION DATOS GENERALES -->
-      <section class="seccion">
-        <div class="seccionChild">
-          <div class="numero">1</div>
-          <div id="datosGenerales" class="titulo_seccion">
-            DATOS GENERALES DE LA VERIFICACIÓN
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="descripcionDiligencia" style="height: 150px"></textarea>
+          <label for="descripcionDiligencia">Descripción de la Diligencia</label>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck"> Verifícame </label>
           </div>
         </div>
-      </section>
-      <div class="datosGenerales">
-        <div>1. FECHA</div>
-        <div>2. HORA</div>
-        <div>3. LUGAR DE VERIFICACIÓN</div>
-        <div>Dato fecha</div>
-        <div>dato hora</div>
-        <div>dato LUGAR</div>
-      </div>
-
-      
-
-      <!-- SECCION REFERENCIAS -->
-      <section class="seccion">
-        <div class="numero">2</div>
-        <div id="referencia" class="titulo_seccion">REFERENCIAS</div>
-      </section>
-      <section>
-        <div class="seccion_referencias">
-          <div class="numero_referencias">2.1</div>
-          <div class="dato_referencias">ACTA DE INMOVILIZACIÓN-INCAUTACIÓN</div>
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Ingresar</button>
         </div>
-        <div class="data_2_1">DATO ACTA</div>
-      </section>
-
-      <section>
-        <div class="seccion_referencias">
-          <div class="numero_referencias">2.2</div>
-          <div class="dato_referencias">EXPEDIENTE</div>
-        </div>
-        <div class="data_2_2">DATO EXPEDIENTE</div>
-      </section>
-
-      <section>
-        <div class="seccion_referencias">
-          <div class="numero_referencias">2.3</div>
-          <div class="dato_referencias">NOMBRE DEL SOLICITANTE</div>
-        </div>
-        <div class="data_2_3"> DATO NOMBRE SOLICITANTE</div>
-      </section>
-
-      <section>
-        <div class="seccion_referencias">
-          <div class="numero_referencias">2.4</div>
-          <div class="dato_referencias">OTRAS</div>
-        </div>
-        <div class="data_2_4">DATO OTROS</div>
-      </section>
-
-    
-
-      <!-- SECCION DILIGENCIAS -->
-      <section class="seccion">
-        <div class="numero">3</div>
-        <div id="diligencia" class="titulo_seccion">DILIGENCIA</div>
-      </section>
-      <section class="seccion">
-        <div class="numero_diligencia">3.1 N°</div>
-        <div class="seccionDiligencia">
-          <div class="seccionDiligencias">3.2 NOMBRE DEL CONCURRENTE</div>
-          <div class="dni">3.3 DOC. IDENTIDAD</div>
-          <div class="seccionDiligencias">3.4 CALIDAD DEL CONCURRENTE</div>
-        </div>
-      </section>
-      <section class="seccion">
-        <div class="numero_diligencia">n</div>
-        <div class="seccionDiligencia">
-          <div id="diligencia" class="seccionDiligencias">datos</div>
-          <div id="diligencia" class="dni">datos</div>
-          <div id="diligencia" class="seccionDiligencias">datos</div>
-        </div>
-      </section>
-      <section class="seccion">
-        <div class="numero_diligencia">n</div>
-        <div class="seccionDiligencia">
-          <div id="diligencia" class="seccionDiligencias">datos</div>
-          <div id="diligencia" class="dni">datos</div>
-          <div id="diligencia" class="seccionDiligencias">datos</div>
-        </div>
-      </section>
-      <section class="seccion">
-        <div class="numero_diligencia">n</div>
-        <div class="seccionDiligencia">
-          <div id="diligencia" class="seccionDiligencias">datos</div>
-          <div id="diligencia" class="dni">datos</div>
-          <div id="diligencia" class="seccionDiligencias">datos</div>
-        </div>
-      </section>
-      
-      <section>
-        <div class="titulo_descripcion_diligencia">
-          3.5 DESCRIPCIÓN DE LA DILIGENCIA
-        </div>
-        <div
-          id="contenido_diligencia"
-          class="seccion_diligencia_descripcion"
-        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, voluptatem quo! Suscipit quas dicta facilis consequuntur, harum voluptates voluptatibus quibusdam alias aspernatur asperiores expedita excepturi officia dignissimos ut quidem optio.
-      
-      
-      </div>
-
-     
-
-      <div id="contenido_diligencia" class="seccion_fotos">
-        <div class="input">
-          <p>SE PROCEDIO A TOMAR FOTOGRAFÍAS DIGITALES DE LAS MERCANCÍAS VERIFICADAS LAS CUALES FORMAN PARTE INTEGRANTE
-            DE LA PRESENTE DILIGENCIA Y SE AGREGAN A LOS ACTUADOS: </p>
-        </div>
-        <div class="input">
-         <input type="text" class="textInput">
-        </div>
-       </div>
-      
-      <div id="contenido_diligencia" >
-        <div class="seccion_fotos">
-          <div class="input">
-            <p>SE EXTRANJERON MUESTRAS REPRESENTATIVAS DE LA MERCANCÍAS VERIFICADA EN NÚMERO
-            <input type="text" class="cantInput">
-            Y EN FORMA ALEATORIA, PROCEDIENDOSE A SU ENVASADO Y ETIQUETADO, LAS MISMAS QUE SERAN REMITIDAS AL LABORATIO CENTRAL</P>
-          </div>
-          <input type="text" class="textInput">
-        </div>
-      </div>
-
-      <!-- SECCION PERSONAL ADUANERO -->
-      <section class="sections">
-          <div class="seccionPesonal">
-            <div>
-              <div class="seccion9">
-                <div class="numero">9</div>
-                <div id="funcionarioAduanero">FUNCIONARIO ADUANERO</div>
-              </div>
-              <div class="firma1">FIRMA/REGISTRO</div>
-            </div>
-            
-
-          <div>
-            <div class="seccion10">
-              <div class="numero">10</div>
-              <div id="responsableMercancias">RESPONSABLE DE LAS MERCANCIAS</div>
-            </div>
-            <div class="firma2">FIRMA/REGISTRO/DNI</div>
-          </div>
-
-
-        </div>
-      </section>
-     
-      <!-- SECCION CONCURRENTES -->
-      <section class="seccion">
-        <div class="numero">11</div>
-        <div id="concurrentes" class="titulo_seccion">CONCURRENTES</div>
-      </div>
-      <div class="firma3">
-        <div class="boxFirma">
-          <div class="firmaCenter">FIRMA</div>
-          <div>NOMBRE:............................................................................................</div>
-          <div>DOC. IDENTIDAD:.............................................................................</div>
-        </div>
-       
+        
+      </form>
     </div>
-      </section>
-    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

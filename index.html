@@ -11,30 +11,37 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Formulario - Acta de Verificación</title>
   </head>
   <body>
     <div class="form_container">
-      <br />
-      <form class="row g-3">
-        <div class="col-md-12" needs-validation>
-          <label for="inputCity" class="form-label">Acta de Verificación</label>
-          <input type="number" class="form-control" id="inputDate" placeholder="000-0000-0000-000000"/>
+      <form role="form" data-toggle="validator">
+        <div class="form-group col-md-12">
+          <label for="inputActa" class="form-label">Acta de Verificación</label>
+          <input
+            type="number"
+            class="form-control"
+            id="inputActa"
+            placeholder="000-0000-0000-000000"
+            required
+          />
         </div>
         <div class="col-md-2">
           <label for="inputCity" class="form-label">Fecha</label>
-          <input type="date" class="form-control" id="inputDate" />
+          <input type="date" class="form-control" id="inputDate" required />
         </div>
         <div class="col-md-2">
           <label for="inputState" class="form-label">Hora</label>
-          <input type="time" class="form-control" id="inputTime" />
+          <input type="time" class="form-control" id="inputTime" required />
         </div>
         <div class="col-md-8">
           <label for="inputZip" class="form-label">Lugar de Verificación</label>
-          <input type="text" class="form-control" id="inputPlace" />
+          <input type="text" class="form-control" id="inputPlace" required/>
         </div>
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Acta de Inmovilización - Incautación</label>
+          <label for="inputEmail4" class="form-label"
+            >Acta de Inmovilización - Incautación</label
+          >
           <input type="text" class="form-control" id="inputEmail4" />
         </div>
         <div class="col-md-6">
@@ -42,7 +49,9 @@
           <input type="text" class="form-control" id="inputPassword4" />
         </div>
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Nombre del Solicitante</label>
+          <label for="inputAddress" class="form-label"
+            >Nombre del Solicitante</label
+          >
           <input
             type="text"
             class="form-control"
@@ -60,7 +69,9 @@
           />
         </div>
         <div class="col-12">
-          <label for="inputNameConcurrente" class="form-label">Nombre del Concurrente</label>
+          <label for="inputNameConcurrente" class="form-label"
+            >Nombre del Concurrente</label
+          >
           <input
             type="text"
             class="form-control"
@@ -69,37 +80,86 @@
           />
         </div>
         <div class="col-md-6">
-          <label for="inputDocConcurrente" class="form-label">Doc. de Identidad</label>
+          <label for="inputDocConcurrente" class="form-label"
+            >Doc. de Identidad</label
+          >
           <input type="number" class="form-control" id="inputDocConcurrente" />
         </div>
         <div class="col-md-6">
-          <label for="inputCalidadConcurrente" class="form-label">Calidad del Concurrente</label>
-          <input type="text" class="form-control" id="inputCalidadConcurrente" />
+          <label for="inputCalidadConcurrente" class="form-label"
+            >Calidad del Concurrente</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputCalidadConcurrente"
+          />
         </div>
 
         <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="descripcionDiligencia" style="height: 150px"></textarea>
-          <label for="descripcionDiligencia">Descripción de la Diligencia</label>
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="descripcionDiligencia"
+            style="height: 150px"
+            required
+          ></textarea>
+          <label for="descripcionDiligencia"
+            >Descripción de la Diligencia</label
+          >
         </div>
 
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck"> Verifícame </label>
-          </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            SE PROCEDIO A TOMAR FOTOGRAFÍAS DIGITALES DE LAS MERCANCÍAS
+            VERIFICADAS LAS CUALES FORMAN PARTE INTEGRANTE DE LA PRESENTE
+            DILIGENCIA Y SE AGREGAN A LOS ACTUADOS.
+          </label>
         </div>
-        
-        <div class="col-12">
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            SE EXTRANJERON MUESTRAS REPRESENTATIVAS DE LA MERCANCÍAS VERIFICADA
+            EN NÚMERO
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Y EN FORMA ALEATORIA, PROCEDIENDOSE A SU ENVASADO Y ETIQUETADO, LAS
+            MISMAS QUE SERAN REMITIDAS AL LABORATIO CENTRAL
+          </label>
+        </div>
+
+        <div class="form-group col-12">
           <button type="submit" class="btn btn-primary">Ingresar</button>
         </div>
-        
       </form>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
   </body>
 </html>

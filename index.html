@@ -181,7 +181,7 @@
                               <label for="inputDocConcurrente" class="form-label"
                                 >Doc. de Identidad</label
                               >
-                              <input type="number" class="form-control" id="inputDocConcurrente" />
+                              <input type="tel" class="form-control" id="inputDocConcurrente" minlength="8"/>
                             </div>
                             <div class="col-md-6">
                               <label for="inputCalidadConcurrente" class="form-label"
@@ -206,8 +206,6 @@
 
           <!-- modal aquí  arriba-->
 
-       
-
           <div class="col-md-12 mb-3">
             <label for="descripcionDiligencia"
             >Descripción de la Diligencia</label
@@ -221,8 +219,6 @@
           ></textarea>
           </div>
           
-                 
-
         <div class="form-check">
           <input
             class="form-check-input"
@@ -258,7 +254,7 @@
     
 
         <div class="form-group col-12 d-flex justify-content-center mt-2">
-          <button type="submit" class="btn btn-primary btn-lg" id="btnSubmit">Ingresar</button>
+          <button type="submit" class="btn btn-primary btn-lg" id="btnSubmit" onclick="printData()">Ingresar Datos / Imprimir</button>
         </div>
       </form>
     </div>

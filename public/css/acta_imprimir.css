@@ -1,0 +1,311 @@
+body {
+margin: 2%;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+img{
+    display: flex;
+    justify-items: left;
+    height: 3.5em;
+    width: 12em;
+    margin-bottom: -20px;
+
+}
+h4{
+    margin-bottom: 5px;
+}
+
+
+.seccion{
+border: 1px solid black;
+    display: flex;
+    align-items: flex-end;
+}
+
+.seccionChild{
+    display: flex;
+    align-items: flex-end;
+}
+
+.numero {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 5px;
+    min-width: 3rem;
+    border-right: 1px solid #070707;
+}
+
+.seccionPesonal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.seccion9 {
+    display: flex;
+    margin-right: 13px;
+    border: 1px solid #070707;
+}
+
+.seccion10 {
+    display: flex;
+    margin-left: 13px;
+    border: 1px solid #070707;
+}
+
+#responsableMercancias {
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#funcionarioAduanero {
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.datosGenerales {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    text-align: left;
+    margin-bottom: 10px;
+
+
+}
+
+.datosGenerales >div {
+    
+    height: 3rem;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 5px;
+    font-size: 11px;
+    height: fit-content;
+   
+}
+
+.seccion_referencias{   
+    
+    display: flex;
+    align-items: flex-start;
+    border-bottom:1px solid black;
+    border-left: 1px solid black;
+    border-right:  1px solid black;
+}
+
+.numero_referencias {
+    font-weight: 700;
+    text-align: left;
+    padding-left: 5px;
+    min-width: 1rem;
+    border-right:1px solid #070707;
+    font-size: 11px;
+    
+
+}
+
+.dato_referencias {
+    text-align: left;
+    width: 100%;
+    padding-left: 3px;
+    font-size: 11px;
+}
+
+.titulo_seccion {
+    padding-left: 3px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.seccionDiligencias {
+    padding-left: 5px;
+    font-size: 11px;
+    text-align: left;
+}
+
+.data_2_1 {
+    
+    
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 1.4rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
+    
+}
+
+.data_2_2 {
+    
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 1.4rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
+    
+}
+
+.data_2_3 {
+
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 1.4rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
+    
+}
+
+.data_2_4 {
+    height: 1.4rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-bottom:10px;
+}
+
+.seccionDiligencia {
+    font-size: 11px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:5fr 2fr 3fr;
+
+}
+
+.dni {
+    font-size: 11px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.numero_diligencia  {
+    text-align: left;
+    padding-left: 5px;
+    min-width: 3rem;
+    font-size: 11px;
+    border-right: 1px solid black;
+
+}
+
+.seccion_diligencia_descripcion {
+    height: 11rem;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+.titulo_descripcion_diligencia {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    font-size: 11px;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-top: 10px;   
+}
+
+.firma1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 6rem;
+    font-size: 11px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-right: 13px;
+}
+
+.firma2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 6rem;
+    font-size: 11px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-left: 13px;
+}
+
+.firma3 {
+
+    display: flex;
+    align-items: end;
+    height: 8rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.firmaCenter{
+    text-align: center;
+}
+
+.boxFirma{
+    height: 4rem;
+    width: 20rem;
+    margin: 5px;
+    display: grid;
+    font-size: 11px;
+    text-align: left;
+}
+
+.seccion_fotos {
+    height: 55px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    display: flex;
+    font-size: 11px;
+    text-align: justify;
+    padding-left: 5px;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    justify-items: center
+}
+
+.textInput {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.cantInput{
+    height: 1rem;
+    width: 2rem;
+}
+
+.firma{
+display: flex;
+justify-items: end;
+
+}

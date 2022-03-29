@@ -38,11 +38,36 @@
           <label for="inputPlace" class="form-label">Lugar de Verificación</label>
           <input type="text" class="form-control" id="inputPlace" required/>
         </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="checkInmovilizacion"
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Acta de Inmovilización
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="checkIncautacion"
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Acta de Incautación
+          </label>
+        </div>
+
         <div class="col-md-6">
-          <label for="inputActaInmovilizacion" class="form-label"
+          <label for="inputActaInmovilizacion" class="form-label" 
             >Acta de Inmovilización - Incautación</label
           >
-          <input type="text" class="form-control" id="inputInmovilizacion" required/>
+          <input placeholder="000-0000-0000-000000" type="text" class="form-control" id="inputInmovilizacion"/>
         </div>
         <div class="col-md-6">
           <label for="inputExpediente" class="form-label">Expediente</label>
@@ -75,7 +100,7 @@
           <input
             type="text"
             class="form-control"
-            id="inputNamConcurrente"
+            id="inputNomConcurrente"
             placeholder="Juanito Alimaña"
           />
         </div>
@@ -96,18 +121,20 @@
           />
         </div>
 
-        <div class="form-floating">
+          <div class="col-md-12">
+            <label for="descripcionDiligencia"
+            >Descripción de la Diligencia</label
+          >
           <textarea
             class="form-control"
-            placeholder="Leave a comment here"
+            placeholder="Detalle aquí"
             id="descripcionDiligencia"
             style="height: 150px"
             required
           ></textarea>
-          <label for="descripcionDiligencia"
-            >Descripción de la Diligencia</label
-          >
-        </div>
+          </div>
+          
+                 
 
         <div class="form-check">
           <input
@@ -118,9 +145,7 @@
             checked
           />
           <label class="form-check-label" for="flexCheckChecked">
-            SE PROCEDIO A TOMAR FOTOGRAFÍAS DIGITALES DE LAS MERCANCÍAS
-            VERIFICADAS LAS CUALES FORMAN PARTE INTEGRANTE DE LA PRESENTE
-            DILIGENCIA Y SE AGREGAN A LOS ACTUADOS.
+            Se procedio a tomar fotografías digitales de las mercancías verificadas las cuales forman parte integrante de la represente diligencia y se agregan a los actuados.
           </label>
         </div>
 
@@ -132,23 +157,18 @@
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            SE EXTRANJERON MUESTRAS REPRESENTATIVAS DE LA MERCANCÍAS VERIFICADA
-            EN NÚMERO
+            Se extrajeron  muestras representativas de la mercancía verificada en forma aleatoria, procediendose a su envasado y etiquetado, las mismas que seran remitidas al laboratorio central.
           </label>
         </div>
 
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault2"
-          />
-          <label class="form-check-label" for="flexCheckDefault2">
-            Y EN FORMA ALEATORIA, PROCEDIENDOSE A SU ENVASADO Y ETIQUETADO, LAS
-            MISMAS QUE SERAN REMITIDAS AL LABORATIO CENTRAL
-          </label>
+        <div class="col-md-6">
+          <label for="inputPassword" class="col-md-6 col-form-label"> Cantidad de muestra extraida:</label>
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="inputPassword">
+          </div>
         </div>
+
+    
 
         <div class="form-group col-12">
           <button type="submit" class="btn btn-primary" id="btnSubmit">Ingresar</button>

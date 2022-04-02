@@ -1,4 +1,4 @@
-import {validation} from "/src/public/validation.js";
+import validation from "./validation.js";
 
 console.log("Hola Mundo");
 validation();

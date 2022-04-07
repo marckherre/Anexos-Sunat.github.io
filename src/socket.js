@@ -1,3 +1,6 @@
-import acta from "./models/acta"
+import Acta from "./models/acta"
 
-io()
+export default (io)=> {io.on("connection", (socket) => {
+    console.log("conectado okokokokokok");   
+  });
+}

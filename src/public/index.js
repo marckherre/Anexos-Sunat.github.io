@@ -1,5 +1,6 @@
 import validation from "./validation.js";
 
+
 console.log("Hola Mundo");
 validation();
 

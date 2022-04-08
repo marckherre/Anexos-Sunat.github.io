@@ -9,7 +9,8 @@ connectDB();
 
 const server = http.createServer(app);
 const httpServer = server.listen(PORT);
-console.log(`Connect on port ${PORT}`);
+console.log(`Connect on port: ${PORT}`);
+console.log('connect on port:', PORT);
 
 const io = new websocketServer(httpServer);
 sockets(io);

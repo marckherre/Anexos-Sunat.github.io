@@ -1,0 +1,27 @@
+import {guardarDatosActa} from "./socket_cliente.js"
+
+const actaVerificacion= document.querySelector("#inputActa")
+const fecha= document.querySelector("#inputDate")
+const hora= document.querySelector("#inputTime")
+const lugarVerificacion= document.querySelector("#inputPlace")
+const actaInmovilizacion= document.querySelector("#checkInmovilizacion")
+const actaIncautacion= document.querySelector("#checkIncautacion")
+const numeroInmovilizacion= document.querySelector("#inputInmovilizacion")
+const expediente= document.querySelector("#inputExpediente")
+const solicitante= document.querySelector("#inputNomSolicitante")
+const otros= document.querySelector("#inputOtros")
+const nameConcurrente1= document.querySelector("#inputNamConcurrente1")
+const DNIConcurrente1= document.querySelector("#inputDocConcurrente1")
+const calidadConcurrente1= document.querySelector("#inputCalidadConcurrente1")
+const nameConcurrente2= document.querySelector("#inputNamConcurrente2")
+const DNIConcurrente2= document.querySelector("#inputDocConcurrente2")
+const calidadConcurrente2= document.querySelector("#inputCalidadConcurrente2")
+const nameConcurrente3= document.querySelector("#inputNamConcurrente3")
+const DNIConcurrente3= document.querySelector("#inputDocConcurrente3")
+const calidadConcurrente3= document.querySelector("#inputCalidadConcurrente3")
+const descripcion= document.querySelector("#descripcionDiligencia")
+const fotografia= document.querySelector("#checkFotografia")
+const cantidadMuestra= document.querySelector("#inputMuestra")
+const muestra= document.querySelector("#checkMuestra")
+
+

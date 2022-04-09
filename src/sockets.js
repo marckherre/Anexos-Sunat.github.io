@@ -8,8 +8,11 @@ export default (io) => {
     };
     emitActas();
 
-    socket.on("cliente:newacta", data => {
-    console.log(data);
+    socket.on("cliente:newacta", async(data) => {
+      console.log(data);
+    /*   const newActa = new Acta(data)
+      const savedActa = await newActa.save()
+      console.log(savedActa); */
     });
   });
 };

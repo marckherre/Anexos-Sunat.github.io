@@ -2,7 +2,7 @@ const socket = io();
 
 export const cargarActas = () => {
   socket.on("mostraractas", (data) => {
-    console.log(data);
+    console.log(data); //para que las actas esten dispobibles y filtrarlas
   });
 };
 

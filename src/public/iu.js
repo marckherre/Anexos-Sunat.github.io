@@ -1,6 +1,35 @@
-import {guardarDatosActa} from "./socket_cliente.js"
+import { guardarDatosActa } from "./socket_cliente.js";
 
-const actaVerificacion= document.querySelector("#inputActa")
+export const onHandleSubmit = (e) => {
+  e.preventDefault();
+  guardarDatosActa(
+    actaForm["inputActa"].value,
+    actaForm["inputDate"].value,
+    actaForm["inputTime"].value,
+    actaForm["inputPlace"].value,
+    actaForm["checkInmovilizacion"].value,
+    actaForm["checkIncautacion"].value,
+    actaForm["inputInmovilizacion"].value,
+    actaForm["inputExpediente"].value,
+    actaForm["inputNomSolicitante"].value,
+    actaForm["inputOtros"].value,
+    actaForm["inputNamConcurrente1"].value,
+    actaForm["inputDocConcurrente1"].value,
+    actaForm["inputCalidadConcurrente1"].value,
+    actaForm["inputNamConcurrente2"].value,
+    actaForm["inputDocConcurrente2"].value,
+    actaForm["inputCalidadConcurrente2"].value,
+    actaForm["inputNamConcurrente3"].value,
+    actaForm["inputDocConcurrente3"].value,
+    actaForm["inputCalidadConcurrente3"].value,
+    actaForm["descripcionDiligencia"].value,
+    actaForm["checkFotografia"].value,
+    actaForm["inputMuestra"].value,
+    actaForm["checkMuestra"].value
+  );
+};
+
+/* const actaVerificacion= document.querySelector("#inputActa")
 const fecha= document.querySelector("#inputDate")
 const hora= document.querySelector("#inputTime")
 const lugarVerificacion= document.querySelector("#inputPlace")
@@ -23,5 +52,4 @@ const descripcion= document.querySelector("#descripcionDiligencia")
 const fotografia= document.querySelector("#checkFotografia")
 const cantidadMuestra= document.querySelector("#inputMuestra")
 const muestra= document.querySelector("#checkMuestra")
-
-
+ */

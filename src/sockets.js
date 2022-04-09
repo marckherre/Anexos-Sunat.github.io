@@ -1,10 +1,16 @@
-import Acta from './models/acta'
+import Acta from "./models/acta";
 
 export default (io) => {
+  io.on("connection", (socket) => {
+    const emitActas = async () => {
+      const actas = await Acta.find();
+      io.emit('mostraractas', actas)
+    };
+    emitActas();
 
-  io.on('connection', () =>{
-    console.log('nueva coneccion');
-  }
-  )
-
+    socket.on("cliente:newacta", data => {
+    console.log(data);
+    });
+  });
 };
+ 

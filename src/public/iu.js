@@ -8,7 +8,6 @@ const checkMuestra = document.querySelector("#checkMuestra")
 
 export const onHandleSubmit = (e) => {
   e.preventDefault();
-  console.log(checkInmovilizacion);
   guardarDatosActa(
     actaForm["inputActa"].value,
     actaForm["inputDate"].value,
@@ -16,7 +15,7 @@ export const onHandleSubmit = (e) => {
     actaForm["inputPlace"].value,
     checkInmovilizacion.checked,
     checkIncautacion.checked,
-    actaForm["inputInmovilizacion"].value,
+    actaForm["datoInputActa_II"].value,
     actaForm["inputExpediente"].value,
     actaForm["inputNomSolicitante"].value,
     actaForm["inputOtros"].value,

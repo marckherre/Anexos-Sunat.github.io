@@ -27,10 +27,8 @@ const schema = new Schema(
       
     },
 
-    actaIncautacion: {      
-      type: String,
-      
-      
+    numeroInmovilizacion: {
+      type: String
     },
 
     expediente: {      

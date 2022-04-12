@@ -9,10 +9,9 @@ export default (io) => {
     emitActas();
 
     socket.on("cliente:newacta", async(data) => {
-      console.log(data);
-    /*   const newActa = new Acta(data)
-      const savedActa = await newActa.save()
-      console.log(savedActa); */
+       const newActa = new Acta(data)
+       const savedActa = await newActa.save()
+       console.log(savedActa);
     });
   });
 };

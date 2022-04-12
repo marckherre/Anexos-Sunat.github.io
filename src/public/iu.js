@@ -1,14 +1,21 @@
 import { guardarDatosActa } from "./socket_cliente.js";
 
+const checkIncautacion= document.querySelector('#checkIncautacion')
+const checkInmovilizacion = document.querySelector('#checkInmovilizacion')
+const checkFotografia = document.querySelector("#checkFotografia")
+const checkMuestra = document.querySelector("#checkMuestra")
+
+
 export const onHandleSubmit = (e) => {
   e.preventDefault();
+  console.log(checkInmovilizacion);
   guardarDatosActa(
     actaForm["inputActa"].value,
     actaForm["inputDate"].value,
     actaForm["inputTime"].value,
     actaForm["inputPlace"].value,
-    actaForm["checkInmovilizacion"].value,
-    actaForm["checkIncautacion"].value,
+    checkInmovilizacion.checked,
+    checkIncautacion.checked,
     actaForm["inputInmovilizacion"].value,
     actaForm["inputExpediente"].value,
     actaForm["inputNomSolicitante"].value,
@@ -19,14 +26,15 @@ export const onHandleSubmit = (e) => {
     actaForm["inputNamConcurrente2"].value,
     actaForm["inputDocConcurrente2"].value,
     actaForm["inputCalidadConcurrente2"].value,
-    actaForm["inputNamConcurrente3"].value,
+    actaForm["inputNamConcurrente3"].value, 
     actaForm["inputDocConcurrente3"].value,
-    actaForm["inputCalidadConcurrente3"].value,
+    actaForm["inputCalidadConcurrente3"].value, 
     actaForm["descripcionDiligencia"].value,
-    actaForm["checkFotografia"].value,
+    checkFotografia.checked,
     actaForm["inputMuestra"].value,
-    actaForm["checkMuestra"].value
+    checkMuestra.checked
   );
+
 };
 
 /* const actaVerificacion= document.querySelector("#inputActa")

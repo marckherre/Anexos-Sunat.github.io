@@ -7,7 +7,7 @@ export const cargarActas = () => {
 };
 
 export const guardarDatosActa = (
-  actaVerificacion,  
+  actaVerificacion,
   fecha,
   hora,
   lugarVerificacion,
@@ -54,7 +54,7 @@ export const guardarDatosActa = (
     descripcion,
     fotografia,
     cantidadMuestra,
-    muestra
+    muestra,
   });
 };
 

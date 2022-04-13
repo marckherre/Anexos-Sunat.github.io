@@ -20,6 +20,7 @@ function validation() {
       false
     );
   });
+  return true;
 }
 
 export default validation;

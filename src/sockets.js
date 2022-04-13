@@ -5,13 +5,14 @@ export default (io) => {
     const emitActas = async () => {
       const actas = await Acta.find();
       io.emit('mostraractas', actas)
+      // console.log(actas);
     };
     emitActas();
 
     socket.on("cliente:newacta", async(data) => {
        const newActa = new Acta(data)
        const savedActa = await newActa.save()
-       console.log(savedActa);
+      console.log(savedActa);
     });
   });
 };

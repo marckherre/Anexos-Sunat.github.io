@@ -1,10 +1,9 @@
 import { guardarDatosActa } from "./socket_cliente.js";
 
-const checkIncautacion= document.querySelector('#checkIncautacion')
-const checkInmovilizacion = document.querySelector('#checkInmovilizacion')
-const checkFotografia = document.querySelector("#checkFotografia")
-const checkMuestra = document.querySelector("#checkMuestra")
-
+const checkIncautacion = document.querySelector("#checkIncautacion");
+const checkInmovilizacion = document.querySelector("#checkInmovilizacion");
+const checkFotografia = document.querySelector("#checkFotografia");
+const checkMuestra = document.querySelector("#checkMuestra");
 
 export const onHandleSubmit = (e) => {
   e.preventDefault();
@@ -25,15 +24,14 @@ export const onHandleSubmit = (e) => {
     actaForm["inputNamConcurrente2"].value,
     actaForm["inputDocConcurrente2"].value,
     actaForm["inputCalidadConcurrente2"].value,
-    actaForm["inputNamConcurrente3"].value, 
+    actaForm["inputNamConcurrente3"].value,
     actaForm["inputDocConcurrente3"].value,
-    actaForm["inputCalidadConcurrente3"].value, 
+    actaForm["inputCalidadConcurrente3"].value,
     actaForm["descripcionDiligencia"].value,
     checkFotografia.checked,
     actaForm["inputMuestra"].value,
     checkMuestra.checked
   );
-
 };
 
 /* const actaVerificacion= document.querySelector("#inputActa")
